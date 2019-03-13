@@ -2,11 +2,11 @@ package ru.avalon.java.dev.j10.labs.commons;
 
 public class Address{
     
-String country;
-String city;
-String street;
-String numberOfHouse;
-String door;
+private String country;
+private city;
+private String street;
+private String numberOfHouse;
+private String door;
 
 public Address(String country, String city, String street, String numberOfHouse){
     
