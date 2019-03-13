@@ -34,8 +34,8 @@ public class Person {
    
    //set
     
-    public void setAddress(Address address){
-            this.address = address;
+   public void setAddress(String country, String city, String street, String houseOfNumber, String door){
+        this.address = new Address(country, city, street, houseOfNumber, door);
     }
     
     //get
