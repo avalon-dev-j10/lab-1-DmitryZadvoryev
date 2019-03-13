@@ -13,8 +13,8 @@ public class Main {
       String ivanovName = ivanov.getFullName();
       String smithName = smith.getFullName();
       
-      ivanov.setAddress(new Address("Russia","Moscow", "Bol'shoy patrialshiy pereulok","12 stroenie 1","111"));
-      smith.setAddress(new Address("United States of America", "West Palm Beach", "Park place","10"));
+      ivanov.setAddress("Russia","Moscow", "Bol'shoy patrialshiy pereulok","12 stroenie 1","111");
+      smith.setAddress("United States of America", "West Palm Beach", "Park place","10","1");
       
       String ivanovAddress = ivanov.getAddress();
       String smithAddress = smith.getAddress();
