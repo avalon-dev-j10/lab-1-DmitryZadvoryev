@@ -15,26 +15,50 @@ package ru.avalon.java.dev.j10.labs.models;
  *  <li> орган, выдавший документ.
  * </ol>
  */
-class Passport {
 
-    /*
-     * TODO(Студент): Закончить определение класса.
-     *
-     * 1. Объявить атрибуты класса.
-     *
-     * 2. Определить необходимые методы класса. Подумайте о
-     *    том, какие методы должны существовать в классе,
-     *    чтобы обеспечивать получение всей необходимой
-     *    информации о состоянии объектов данного класса.
-     *    Все ли поля обязательно будут проинициализированы
-     *    при создании экземпляра?
-     *
-     * 3. Создайте все необходимые конструкторы класса.
-     *
-     * 4. Помните о возможности существования перегруженных
-     *    конструкторов.
-     *
-     * 5. Обеспечте возможность использования класса за
-     *    пределами пакета.
-     */
+public class Passport {
+        
+    private int seriesAndNumber;
+    private String name;
+    private String surname;
+    private String patronymic;
+    private String secondName;
+    private String birthDate;
+    private String dateOfIssue;
+    private String issuingAuthority;
+    
+    public Passport(Person person){
+        
+        name = person.getName();
+        surname = person.getSurname();
+        patronymic = person.getPatronymic();
+        secondName = person.getSecondName();
+      
+    }
+    
+    public Passport (int seriesAndNumber , String birthDate, String dateOfIssue, String issuingAuthority){
+       
+        this.seriesAndNumber = seriesAndNumber;
+        this.birthDate = birthDate;
+        this.dateOfIssue = dateOfIssue;
+        this.issuingAuthority = issuingAuthority;       
+    }
+   
+   //get
+    
+    public int getSeriesAndNumber(){
+        return seriesAndNumber;
+    }
+    public String getBirthDate(){
+        return birthDate;
+    }
+    public String getDateOfIssue(){
+        return dateOfIssue;
+    }
+    public String getIssuingAuthority(){
+        return issuingAuthority;
+    }
+    
 }
+
+   
