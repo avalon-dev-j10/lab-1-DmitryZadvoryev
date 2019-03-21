@@ -83,6 +83,9 @@ public class Person {
     }
     
     public String getAddress(){
-        return address.getAddress();     
+        return address.getAddress();
      }
+    public String getPassport(){
+        return passport.getPassport();
+    }
 }

@@ -23,11 +23,10 @@ public class Passport {
     private String dateOfIssue;
     private String issuingAuthority;
     
-    private Person person;
+
       
-    public Passport (Person Person, String seriesAndNumber , String birthDate,
+    public Passport (String seriesAndNumber , String birthDate,
                      String dateOfIssue, String issuingAuthority){
-        this.person = person;
         this.seriesAndNumber = seriesAndNumber;
         this.birthDate = birthDate;
         this.dateOfIssue = dateOfIssue;
@@ -49,9 +48,10 @@ public class Passport {
     public String getIssuingAuthority() {
         return issuingAuthority;
     }
-
-    public Person getPerson() {
-        return person;
+    
+    public String getPassport(){
+       return birthDate + " " + dateOfIssue + " " + issuingAuthority + " " +
+               seriesAndNumber;
     }
 
     public void setSeriesAndNumber(String seriesAndNumber) {
@@ -68,15 +68,5 @@ public class Passport {
 
     public void setIssuingAuthority(String issuingAuthority) {
         this.issuingAuthority = issuingAuthority;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
-    
-    
-   
-    
+    } 
 }
-
-   
