@@ -1,55 +1,26 @@
+
 package ru.avalon.java.dev.j10.labs;
 
 import ru.avalon.java.dev.j10.labs.models.Person;
-
+import ru.avalon.java.dev.j10.labs.models.Passport;
+import ru.avalon.java.dev.j10.labs.commons.Address;
 public class Main {
 
-    Main() {
+    public static void main(String args[]) {
 
-        /*
-         * FIXME(Студент): Измените определение метода так, чтобы он стал точкой входа в приложение.
-         */
-
-        Person ivanov = null;
-        Person smith = null;
-
-        /*
-         * TODO(Студент): Создайте экземпляры класса 'Person'
-         *
-         * 1. Проинициализируейте переменную 'ivanov', так,
-         *    чтобы она адресовала объект типа 'Person'
-         *    описывающий человека по имени 'Иванов Иван Иванович'.
-         *
-         * 2. Проинициализируейте переменную 'smith', так,
-         *    чтобы она адресовала объект типа 'Person'
-         *    описывающий человека по имени 'John Edvard Smith'.
-         */
-
-        /*
-         * TODO(Студент): Создайте несколько строковых переменных:
-         *
-         * 1. Строковую переменную, содержащую полное имя
-         *    человека, описанного объектом, адресованным
-         *    переменной 'ivanov'.
-         *
-         * 2. Строковую переменную, содержащую полное имя
-         *    человека, описанного объектом, адресованным
-         *    переменной 'smith'.
-         *
-         * 3. Строковую переменную, содержащую адрес проживания
-         *    человека, описанного объектом, адресованным
-         *    переменной 'ivanov'.
-         *
-         * 4. Строковую переменную, содержащую адрес проживания
-         *    человека, описанного объектом, адресованным
-         *    переменной 'smith'.
-         */
-
-        /*
-         * TODO(Студент): Выведите в консоль значения созданных строковых переменных:
-         *
-         * Значение каждой переменной должно быть выведено на
-         * отдельной строке.
-         */
+      Person ivanov = new Person("Иван", "Иванов", "Иванович", null);
+      Person smith = new Person ("John", "Smith", null, "Edward");
+       
+      String ivanovName = ivanov.getFullName();
+      String smithName = smith.getFullName();
+   
+      ivanov.setAddress(new Address("Russia, Moscow, Bolshoy, patrialshiy pereulok, 12 stroenie 1, 111"));
+      smith.setAddress(new Address("United States of America, West Palm Beach, Park place, 10"));
+      
+     String ivanovAddress = ivanov.getAddress();
+     String smithAddress = smith.getAddress();
+        
+      System.out.println(ivanovName+ "\n" + ivanovAddress+ "\n" +smithName+  "\n" + smithAddress);
+           
     }
-}
+}  
