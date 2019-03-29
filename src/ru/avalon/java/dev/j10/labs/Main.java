@@ -14,13 +14,15 @@ public class Main {
       String ivanovName = ivanov.getFullName();
       String smithName = smith.getFullName();
    
-      ivanov.setAddress(new Address("Russia, Moscow, Bolshoy, patrialshiy pereulok, 12 stroenie 1, 111"));
-      smith.setAddress(new Address("United States of America, West Palm Beach, Park place, 10"));
+      ivanov.setAddress(new Address("Russia","Moscow", "Bol'shoy patrialshiy pereulok","12 stroenie 1","111"));
+      smith.setAddress(new Address("United States of America", "West Palm Beach", "Park place","10"));
       
      String ivanovAddress = ivanov.getAddress();
      String smithAddress = smith.getAddress();
         
-      System.out.println(ivanovName+ "\n" + ivanovAddress+ "\n" +smithName+  "\n" + smithAddress);
-           
+      System.out.println(ivanovName);
+      System.out.println(ivanovAddress);
+      System.out.println(smithName);
+      System.out.println(smithAddress);
     }
 }  

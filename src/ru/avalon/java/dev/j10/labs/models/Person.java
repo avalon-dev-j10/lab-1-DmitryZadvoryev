@@ -74,7 +74,7 @@ public class Person {
      */
     
     public String getFullName() {
-        if ((secondName == null)&(patronymic == null)){           
+        if ((secondName == null)&&(patronymic == null)){           
             return name+ " " +surname;
         } else if(patronymic == null){
             return name+ " " +secondName.charAt(0)+ "." + " " +surname;

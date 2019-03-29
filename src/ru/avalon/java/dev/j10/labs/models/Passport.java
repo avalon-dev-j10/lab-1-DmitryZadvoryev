@@ -25,8 +25,7 @@ public class Passport {
     
 
       
-    public Passport (String seriesAndNumber , String birthDate,
-                     String dateOfIssue, String issuingAuthority){
+    public Passport (String seriesAndNumber , String birthDate, String dateOfIssue, String issuingAuthority){
         this.seriesAndNumber = seriesAndNumber;
         this.birthDate = birthDate;
         this.dateOfIssue = dateOfIssue;
