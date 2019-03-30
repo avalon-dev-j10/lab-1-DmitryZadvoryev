@@ -1,5 +1,7 @@
 package ru.avalon.java.dev.j10.labs.models;
 
+import ru.avalon.java.dev.j10.labs.commons.Address;
+
 /**
  * Представление о паспортных данных человека.
  * <p>
@@ -22,8 +24,6 @@ public class Passport {
     private String birthDate;
     private String dateOfIssue;
     private String issuingAuthority;
-    
-
       
     public Passport (String seriesAndNumber , String birthDate, String dateOfIssue, String issuingAuthority){
         this.seriesAndNumber = seriesAndNumber;

@@ -21,7 +21,7 @@ public class Person {
    private String patronymic;
    private String secondName;
    
-   private Passport passport;
+   private Passport data;
    private Address registration;
   
    
@@ -37,7 +37,7 @@ public class Person {
     }
     
     public void setPassport(Passport passport){
-         this.passport = passport;     
+         this.data = passport;     
     }
     
      public String getName(){
@@ -86,6 +86,6 @@ public class Person {
         return registration.get();
      }
     public String getPassport(){
-        return passport.get();
+        return data.get();
     }
 }
