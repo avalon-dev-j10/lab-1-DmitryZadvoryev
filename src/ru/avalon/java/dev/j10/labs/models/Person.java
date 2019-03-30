@@ -22,7 +22,7 @@ public class Person {
    private String secondName;
    
    private Passport passport;
-   private Address address;
+   private Address registration;
   
    
    public Person (String name, String surname, String patronymic, String secondName){
@@ -33,7 +33,7 @@ public class Person {
    }
    
     public void setAddress(Address address){
-        this.address = address;  
+        this.registration = address;  
     }
     
     public void setPassport(Passport passport){
@@ -83,9 +83,9 @@ public class Person {
     }
     
     public String getAddress(){
-        return address.getAddress();
+        return registration.get();
      }
     public String getPassport(){
-        return passport.getPassport();
+        return passport.get();
     }
 }

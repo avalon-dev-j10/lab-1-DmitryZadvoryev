@@ -48,8 +48,13 @@ public class Passport {
         return issuingAuthority;
     }
     
-    public String getPassport(){
-       return birthDate + " " + dateOfIssue + " " + issuingAuthority + " " +
+    public String get(){
+       return birthDate + 
+               " " + 
+               dateOfIssue + 
+               " " + 
+               issuingAuthority + 
+               " " +
                seriesAndNumber;
     }
 

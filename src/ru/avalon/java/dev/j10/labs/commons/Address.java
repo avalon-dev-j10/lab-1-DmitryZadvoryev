@@ -2,12 +2,11 @@ package ru.avalon.java.dev.j10.labs.commons;
 
 public class Address{
     
-String country;
-String region;
-String city;
-String street;
-String numberOfHouse;
-String door;
+private String country;
+private String city;
+private String street;
+private String numberOfHouse;
+private String door;
 
 public Address(String country, String city, String street, String numberOfHouse){
     
@@ -23,9 +22,13 @@ public Address(String country, String city, String street, String numberOfHouse,
     this.door = door;
 }
 
-    public String getAddress(){
+    public String get(){
     
-        return country + city + street + numberOfHouse + door;
+        return country + 
+                " " + city + 
+                " " + street + 
+                " " + numberOfHouse + 
+                " " + door;
     
     }
 
