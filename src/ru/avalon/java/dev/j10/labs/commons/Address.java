@@ -25,10 +25,14 @@ public Address(String country, String city, String street, String numberOfHouse,
     public String get(){
     
         return country + 
-                " " + city + 
-                " " + street + 
-                " " + numberOfHouse + 
-                " " + door;
+                " " + 
+                city + 
+                " " + 
+                street + 
+                " " + 
+                numberOfHouse + 
+                " " + 
+                door;
     
     }
 
